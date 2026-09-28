@@ -1,0 +1,225 @@
+<!--meta contact="1" file="tax-readiness.html" current="tax" flow="1" title="Tax Readiness · Your First Salary. Your First Tax. Know What To Do." desc="A 4-hour interactive workshop for final-year college students: salary, income tax, TDS, Form 16, ITR and tax safety." interest="courses" sticky="1" ch="Book Tax Readiness for your placement cell." cl="Tell us your batch size and preferred dates. The workshop runs on campus, in a classroom or in a hybrid format."-->
+<!-- 1 HERO -->
+<section class="page-hero" aria-labelledby="tax-h">
+  <div class="container hero-grid">
+    <div>
+      <nav class="breadcrumb hero-fade" style="--d:0ms" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Programs</span> / <span aria-current="page">Tax Readiness</span></nav>
+      <h1 class="h1 words" id="tax-h">Your First Salary. Your First Tax. Know What To Do.</h1>
+      <div class="badges hero-fade" style="--d:500ms">
+        <span class="chip chip--amber">{{i:clock}} 4 Hours</span><span class="chip chip--navy">For College Students</span><span class="chip chip--green">Placement Cell Program</span>
+      </div>
+      <p class="body-l lede hero-fade" style="--d:600ms">Your offer letter says one number. Your bank account says another. In one interactive workshop, final-year students learn how salary, tax, TDS and ITR actually work, before their first payslip arrives.</p>
+      <p class="mission hero-fade" style="--d:680ms;font-weight:600;margin-top:12px">No tax jargon. No long lectures.</p>
+      <div class="hero-actions hero-fade" style="--d:760ms">
+        <a class="btn btn-primary" href="#contact" data-interest="courses">Book for your placement cell <span class="arrow">{{i:arrow}}</span></a>
+        <a class="btn btn-secondary" href="#ctc-demo">Why is take-home lower?</a>
+      </div>
+    </div>
+    <div class="payslip" role="img" aria-label="Illustration: a sample payslip with basic pay, HRA, allowances and deductions">
+      <div class="payslip-head"><div><strong>Payslip</strong><br><span>First month · Illustrative example</span></div><span class="illus">Example</span></div>
+      <div class="ps-row" style="--r:0"><span>Basic</span><span>₹25,000</span></div>
+      <div class="ps-row" style="--r:1"><span>HRA</span><span>₹10,000</span></div>
+      <div class="ps-row" style="--r:2"><span>Allowances</span><span>₹8,200</span></div>
+      <div class="ps-row ded" style="--r:3"><span>PF</span><span>− ₹1,800</span></div>
+      <div class="ps-row ded" style="--r:4"><span>TDS</span><span>− ₹1,000</span></div>
+      <div class="ps-row ded" style="--r:5"><span>Professional tax</span><span>− ₹200</span></div>
+      <div class="ps-row total" style="--r:6"><span>Take-home</span><span>₹40,200</span></div>
+      <p class="ps-note">Illustrative example: numbers will vary.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2 CTC → TAKE-HOME DEMO -->
+<section class="section" id="ctc-demo" aria-labelledby="ctc-h">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">CTC → take-home</span>
+      <h2 class="reveal" id="ctc-h">Why is my salary lower than my CTC?</h2>
+      <p class="reveal">CTC is what a job costs your employer. Take-home is what lands in your account. Tap a segment to see where the rest goes.</p>
+    </div>
+    <div class="ctc-demo reveal" data-ctc>
+      <div class="ctc-top">
+        <div><div class="lbl">Example: annual CTC</div><div class="val">₹6,00,000</div></div>
+        <div style="text-align:right"><div class="lbl">Take-home (year)</div><div class="val" style="color:var(--green)" data-takehome="528000" aria-live="off">₹5,28,000</div></div>
+      </div>
+      <div class="ctc-bar" role="group" aria-label="CTC split into take-home and deductions">
+        <button class="seg" type="button" style="--w:528;--k:0;--c:#187A4F" data-key="th" data-name="Take-home" data-tip="the money that actually reaches your bank account after all deductions." aria-pressed="false"><span class="seg-l">Take-home</span></button>
+        <button class="seg" type="button" style="--w:43;--k:1;--c:#2E4A8C" data-key="pf" data-name="PF" data-tip="Provident Fund. You and your employer each put a share of your basic pay into a retirement account. It's still your money, just saved for later." aria-pressed="false"><span class="seg-l">PF</span></button>
+        <button class="seg" type="button" style="--w:12;--k:2;--c:#C73A3A" data-key="tds" data-name="TDS" data-tip="tax your employer deducts and pays to the government on your behalf." aria-pressed="false"><span class="seg-l">TDS</span></button>
+        <button class="seg" type="button" style="--w:17;--k:3;--c:#F5B942" data-key="other" data-name="Other" data-tip="things like professional tax, gratuity and insurance that are part of CTC but not paid to you monthly." aria-pressed="false"><span class="seg-l" style="color:#1B2A4E">Other</span></button>
+      </div>
+      <div class="seg-legend">
+        <button type="button" data-key="th" style="--c:#187A4F"><i></i><span>Take-home<b>₹5,28,000</b></span></button>
+        <button type="button" data-key="pf" style="--c:#2E4A8C"><i></i><span>PF<b>₹43,200</b></span></button>
+        <button type="button" data-key="tds" style="--c:#C73A3A"><i></i><span>TDS<b>₹12,000</b></span></button>
+        <button type="button" data-key="other" style="--c:#F5B942"><i></i><span>Other<b>₹16,800</b></span></button>
+      </div>
+      <p class="seg-tip" aria-live="polite"><b>Tip:</b> tap any segment to see what it means.</p>
+      <div class="ctc-foot"><span class="illus">Illustrative example: numbers will vary</span><button class="replay" type="button">{{i:rotate}} Replay</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 MODULES -->
+<section class="section section--cloud" aria-labelledby="mod-h">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">What students will learn</span>
+      <h2 class="reveal" id="mod-h">Five modules. One clear outcome.</h2>
+    </div>
+    <div class="acc-list" data-acc-group data-stagger style="max-width:880px">
+      <div class="acc acc--numbered is-open"><button class="acc-btn" type="button" aria-expanded="true" aria-controls="md-1" id="mdb-1"><span class="num">01</span><span class="t">Understand Your Salary</span>{{i:chev:chev}}</button>
+        <div class="acc-panel" id="md-1" role="region" aria-labelledby="mdb-1"><div><div class="acc-inner"><ul><li>CTC vs take-home</li><li>Salary components: basic, HRA, allowances</li><li>Deductions: PF, professional tax, TDS</li><li>Reading your payslip line by line</li></ul></div></div></div></div>
+      <div class="acc acc--numbered"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="md-2" id="mdb-2"><span class="num">02</span><span class="t">Understand Income Tax</span>{{i:chev:chev}}</button>
+        <div class="acc-panel" id="md-2" role="region" aria-labelledby="mdb-2"><div><div class="acc-inner"><ul><li>How income tax works in India</li><li>Taxable income vs total income</li><li>What PAN is and why it matters</li><li>Where to check current rules each year</li></ul></div></div></div></div>
+      <div class="acc acc--numbered"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="md-3" id="mdb-3"><span class="num">03</span><span class="t">Your First Tax Decisions</span>{{i:chev:chev}}</button>
+        <div class="acc-panel" id="md-3" role="region" aria-labelledby="mdb-3"><div><div class="acc-inner"><ul><li>Choosing a tax regime with your employer</li><li>Declaring investments and rent</li><li>Keeping the right proofs</li></ul></div></div></div></div>
+      <div class="acc acc--numbered"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="md-4" id="mdb-4"><span class="num">04</span><span class="t">ITR: From Confusion to Confidence</span>{{i:chev:chev}}</button>
+        <div class="acc-panel" id="md-4" role="region" aria-labelledby="mdb-4"><div><div class="acc-inner"><ul><li>TDS (tax taken before you're paid) and Form 16</li><li>Form 26AS and AIS</li><li>Filing your ITR step by step</li><li>Refunds and what to do if something's wrong</li></ul></div></div></div></div>
+      <div class="acc acc--numbered"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="md-5" id="mdb-5"><span class="num">05</span><span class="t">Tax Safety</span>{{i:chev:chev}}</button>
+        <div class="acc-panel" id="md-5" role="region" aria-labelledby="mdb-5"><div><div class="acc-inner"><ul><li>Common tax scams</li><li>Fake refund messages</li><li>Using the official portal safely</li><li>Protecting your PAN</li></ul></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 SCENARIOS -->
+<section class="section" aria-labelledby="scen-h">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">Real-life scenarios</span>
+      <h2 class="reveal" id="scen-h">Questions every final-year student asks.</h2>
+    </div>
+    <div class="carousel-wrap">
+      <div class="bubbles carousel carousel--3" data-carousel>
+        <figure class="bubble" style="--i:0;margin:0" data-inview><q>I got my first job. Why is my salary lower than my CTC?</q><figcaption class="cap suggested">— Rohit, final-year B.Tech</figcaption></figure>
+        <figure class="bubble" style="--i:1;margin:0" data-inview><q>Tax was cut from my salary already. Do I still need to file an ITR?</q><figcaption class="cap suggested">— Priya, final-year B.Com</figcaption></figure>
+        <figure class="bubble" style="--i:2;margin:0" data-inview><q>HR is asking me to choose a tax regime. How do I decide?</q><figcaption class="cap suggested">— Arjun, MBA</figcaption></figure>
+        <figure class="bubble" style="--i:3;margin:0" data-inview><q>What is Form 16, and where do I even get it?</q><figcaption class="cap suggested">— Meera, final-year B.Sc</figcaption></figure>
+        <figure class="bubble" style="--i:4;margin:0" data-inview><q>I got an SMS saying I have a tax refund. Is it real?</q><figcaption class="cap suggested">— Kabir, final-year BBA</figcaption></figure>
+        <figure class="bubble" style="--i:5;margin:0" data-inview><q>My internship paid a stipend. Is that taxed too?</q><figcaption class="cap suggested">— Sana, final-year B.Des</figcaption></figure>
+      </div>
+      <div class="dots" aria-label="Choose a question"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 4-HOUR JOURNEY -->
+<section class="section section--cloud" aria-labelledby="hours-h">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">4-hour learning journey</span>
+      <h2 class="reveal" id="hours-h">Four hours. Four clear steps.</h2>
+    </div>
+    <div class="clock-wrap">
+      <div class="clock" data-clock aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <circle class="trk" cx="60" cy="60" r="50"/>
+          <circle class="q" cx="60" cy="60" r="50" pathLength="1" stroke-dashoffset="-0.01"/>
+          <circle class="q" cx="60" cy="60" r="50" pathLength="1" stroke-dashoffset="-0.26"/>
+          <circle class="q" cx="60" cy="60" r="50" pathLength="1" stroke-dashoffset="-0.51"/>
+          <circle class="q" cx="60" cy="60" r="50" pathLength="1" stroke-dashoffset="-0.76"/>
+        </svg>
+        <div class="center"><b>0</b><span>of 4 hours</span></div>
+      </div>
+      <ol class="hours" style="list-style:none;padding:0;margin:0">
+        <li class="hour reveal"><span class="hn">Hour<br>1</span><div><h3 class="h4">Salary &amp; Payslip</h3><dl><div><dt>Focus: </dt><dd>CTC, salary components and deductions.</dd></div><div><dt>Outcome: </dt><dd>Read any payslip and explain your take-home.</dd></div></dl></div></li>
+        <li class="hour reveal"><span class="hn">Hour<br>2</span><div><h3 class="h4">Income Tax Basics</h3><dl><div><dt>Focus: </dt><dd>How income tax works, PAN and tax regimes.</dd></div><div><dt>Outcome: </dt><dd>Know what you're taxed on and why.</dd></div></dl></div></li>
+        <li class="hour reveal"><span class="hn">Hour<br>3</span><div><h3 class="h4">TDS, Form 16 &amp; ITR</h3><dl><div><dt>Focus: </dt><dd>TDS, Form 16, AIS and the ITR process.</dd></div><div><dt>Outcome: </dt><dd>Walk through a filing with confidence.</dd></div></dl></div></li>
+        <li class="hour reveal"><span class="hn">Hour<br>4</span><div><h3 class="h4">Tax Simulation + Safety</h3><dl><div><dt>Focus: </dt><dd>A hands-on simulation, then scam safety.</dd></div><div><dt>Outcome: </dt><dd>Make your first tax decisions and stay safe online.</dd></div></dl></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 6 OUTCOMES -->
+<section class="section" aria-labelledby="out-h">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">By the end of 4 hours</span>
+      <h2 class="reveal" id="out-h">Students will be able to…</h2>
+    </div>
+    <ul class="checklist" data-inview>
+      <li style="--i:0"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" pathLength="1"/></svg></span>Explain the difference between CTC and take-home pay</li>
+      <li style="--i:1"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" pathLength="1"/></svg></span>Read every line of a payslip</li>
+      <li style="--i:2"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" pathLength="1"/></svg></span>Understand how income tax is calculated</li>
+      <li style="--i:3"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" pathLength="1"/></svg></span>Choose a tax regime with a clear reason</li>
+      <li style="--i:4"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" pathLength="1"/></svg></span>Know what TDS and Form 16 are</li>
+      <li style="--i:5"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" pathLength="1"/></svg></span>Walk through filing an ITR</li>
+      <li style="--i:6"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" pathLength="1"/></svg></span>Spot common tax scams and fake refund messages</li>
+      <li style="--i:7"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" pathLength="1"/></svg></span>Keep their PAN and tax records safe</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 7 TAX SAFETY -->
+<section class="section" aria-labelledby="safe-h" style="padding-top:0">
+  <div class="container">
+    <div class="alert-card reveal" data-inview>
+      <div>
+        <span class="eyebrow" style="color:#8A5A00">Tax Safety</span>
+        <h2 id="safe-h">If a refund message asks you to click, stop.</h2>
+        <ul>
+          <li>{{i:alert}} Common tax scams</li>
+          <li>{{i:msg}} Fake refund messages</li>
+          <li>{{i:globe}} Safe portal use</li>
+          <li><svg class="ico lock" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path class="shackle" d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> Protect your PAN</li>
+        </ul>
+      </div>
+      <div class="sms" role="img" aria-label="Example of a fake tax refund SMS, stamped SCAM">
+        <div class="from"><span>VM-ITREFD</span><span>10:42</span></div>
+        <p class="msg">Dear taxpayer, your income tax refund of ₹15,490 is approved. Verify your account within 24 hrs to receive it: <u>itr-refund-verify.co/in</u></p>
+        <span class="scam-stamp" aria-hidden="true">SCAM</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 ADVANTAGE LADDER -->
+<section class="section section--cloud" aria-labelledby="adv-h">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">The advantage ladder</span>
+      <h2 class="reveal" id="adv-h">Tax Readiness is the last step before your first payslip.</h2>
+    </div>
+    <div class="ladder" data-ladder>
+      <div class="ladder-track" aria-hidden="true"><i></i></div>
+      <ol class="ladder-steps">
+        <li class="ladder-step"><a class="ladder-pill" href="financial-passport.html" style="text-decoration:none"><span class="n">1</span>Learn Money</a></li>
+        <li class="ladder-step"><a class="ladder-pill" href="financial-passport.html" style="text-decoration:none"><span class="n">2</span>Understand Finance</a></li>
+        <li class="ladder-step"><span class="ladder-pill"><span class="n">3</span>Get Job-Ready</span></li>
+        <li class="ladder-step"><span class="ladder-pill"><span class="n">4</span>Become Tax-Ready</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 9 FACTS BOX (pinned under the hero on mobile via .flow ordering) -->
+<section class="section facts-section" aria-labelledby="facts-h">
+  <div class="container">
+    <div class="section-head hide-mobile">
+      <span class="eyebrow">Designed for placement cells</span>
+      <h2 id="facts-h">Everything a TPO needs to know.</h2>
+    </div>
+    <h2 class="sr-only hide-desktop">Program facts</h2>
+    <dl class="facts">
+      <div class="facts-row"><span class="icon-badge">{{i:clock}}</span><div><dt>Duration</dt><dd>4 Hours</dd></div></div>
+      <div class="facts-row"><span class="icon-badge icon-badge--amber">{{i:grad}}</span><div><dt>Audience</dt><dd>UG &amp; PG</dd></div></div>
+      <div class="facts-row"><span class="icon-badge icon-badge--navy">{{i:users}}</span><div><dt>Format</dt><dd>Interactive Workshop</dd></div></div>
+      <div class="facts-row"><span class="icon-badge">{{i:calendar}}</span><div><dt>Timing</dt><dd>Pre-placement / final year</dd></div></div>
+      <div class="facts-row"><span class="icon-badge icon-badge--amber">{{i:map}}</span><div><dt>Delivery</dt><dd>Campus / Classroom / Hybrid</dd></div></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 10 CTA BAND -->
+<section class="cta-band" aria-labelledby="tax-cta-h">
+  <div class="container cta-inner">
+    <div>
+      <h2 class="reveal" id="tax-cta-h">Because getting your first salary is exciting. Knowing what to do with it is empowering.</h2>
+    </div>
+    <div class="cta-actions reveal">
+      <a class="btn btn-light" href="#contact" data-interest="courses" data-pulse>Book for your placement cell <span class="arrow">{{i:arrow}}</span></a>
+      <button class="btn btn-outline-light" type="button" data-share="Tax Readiness: your first salary, your first tax, in 4 hours.">{{i:share}} Share</button>
+    </div>
+  </div>
+</section>
