@@ -88,17 +88,20 @@ LOGO = '''<svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x=
 PROGRAMS = [
     ('financial-passport.html', 'fp', 'Financial Passport', 'From knowing about money to knowing what to do with it.', 'grad', ''),
     ('tax-readiness.html', 'tax', 'Tax Readiness', 'Your first salary, your first tax, in 4 hours.', 'receipt', 'icon-badge--amber'),
-    ('finterventions.html', 'fint', 'Finterventions', 'Take one financial problem from idea to prototype.', 'rocket', 'icon-badge--navy'),
 ]
+FINFUN = ('https://finfun.club', 'finfun', 'FinFun', 'Games and activities that make money fun for children.', 'sprout', 'icon-badge--amber')
 
 def header(cur, H, dark):
     def cur_attr(key):
         return ' aria-current="page"' if cur == key else ''
-    prog_cur = ' aria-current="page"' if cur in ('fp', 'tax', 'fint') else ''
+    prog_cur = ' aria-current="page"' if cur in ('fp', 'tax') else ''
+    menu = [FINFUN] + PROGRAMS
+    ext = lambda k: ' target="_blank" rel="noopener"' if k == 'finfun' else ''
+    ext_icon = lambda k: ' {{i:ext}}<span class="sr-only">(opens in a new tab)</span>' if k == 'finfun' else ''
     drop = '\n'.join(
-        f'''<a class="drop-card" href="{href}"{cur_attr(k)}><span class="ic icon-badge {cls}">{{{{i:{ic}}}}}</span><strong>{name}</strong><span>{desc}</span></a>'''
-        for href, k, name, desc, ic, cls in PROGRAMS)
-    sheet_prog = '\n'.join(f'<a href="{href}">{name}<span>{desc}</span></a>' for href, k, name, desc, ic, cls in PROGRAMS)
+        f'''<a class="drop-card" href="{href}"{ext(k)}{cur_attr(k)}><span class="ic icon-badge {cls}">{{{{i:{ic}}}}}</span><strong>{name}{ext_icon(k)}</strong><span>{desc}</span></a>'''
+        for href, k, name, desc, ic, cls in menu)
+    sheet_prog = '\n'.join(f'<a href="{href}"{ext(k)}>{name}<span>{desc}</span></a>' for href, k, name, desc, ic, cls in menu)
     spy = (lambda s: f' data-spy="{s}"') if H == '' else (lambda s: '')
     return f'''<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header{' on-dark' if dark else ''}" data-header>
@@ -114,12 +117,11 @@ def header(cur, H, dark):
 {drop}
           </div>
         </li>
-        <li><a href="{H}#partners"{spy('partners')}>Partners</a></li>
-        <li><a href="{H}#contact"{spy('contact')}{cur_attr('contact')}>Contact Us</a></li>
+        <li><a href="finterventions.html"{cur_attr('fint')}>Finterventions</a></li>
+        <li><a href="contact.html"{cur_attr('contact')}>Contact Us</a></li>
       </ul>
       <span class="nav-indicator" aria-hidden="true"></span>
     </nav>
-    <a class="btn btn-primary btn-sm header-cta" href="{'#contact' if cur not in ('legal','404') else 'contact.html'}" data-interest="partnership">Partner With Us</a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-sheet" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -133,8 +135,8 @@ def header(cur, H, dark):
         <div class="sheet-sub" id="sheet-programs"><div>
 {sheet_prog}
         </div></div></li>
-      <li><a href="{H}#partners">Partners {{{{i:arrow}}}}</a></li>
-      <li><a href="{H}#contact">Contact Us {{{{i:arrow}}}}</a></li>
+      <li><a href="finterventions.html">Finterventions {{{{i:arrow}}}}</a></li>
+      <li><a href="contact.html">Contact Us {{{{i:arrow}}}}</a></li>
     </ul>
     <div class="sheet-foot">
       <a href="tel:+916364155055">+91 63641 55055</a>
@@ -159,8 +161,8 @@ def footer(H):
           <li><a href="{H}#our-work">Our Work</a></li>
           <li><a href="{H}#approach">Our Approach</a></li>
           <li><a href="{H}#programs">Programs</a></li>
-          <li><a href="{H}#partners">Partners</a></li>
-          <li><a href="{H}#contact">Contact Us</a></li>
+          <li><a href="finterventions.html">Finterventions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
       <div>
@@ -169,8 +171,7 @@ def footer(H):
           <li><a href="https://finfun.club" target="_blank" rel="noopener">Children {{{{i:ext}}}}<span class="sr-only">(opens FinFun in a new tab)</span></a></li>
           <li><a href="financial-passport.html">Youth</a></li>
           <li><a href="contact.html?interest=women">Women &amp; SHGs</a></li>
-          <li><a href="contact.html?interest=community">Communities</a></li>
-        </ul>
+                  </ul>
       </div>
       <div>
         <h3>Contact</h3>
@@ -274,7 +275,7 @@ def contact(default, heading, lede, cloud=True):
 </section>'''
 
 def sticky(interest):
-    return f'''<div class="sticky-bar" aria-hidden="true"><strong>Interested?</strong><a class="btn btn-primary btn-sm" href="#contact" data-interest="{interest}">Enquire {{{{i:arrow}}}}</a></div>'''
+    return f'''<div class="sticky-bar" aria-hidden="true"><strong>Interested?</strong><a class="btn btn-primary btn-sm" href="contact.html?interest={interest}">Enquire {{{{i:arrow}}}}</a></div>'''
 
 HEAD = '''<!doctype html>
 <html lang="en-IN" id="top">

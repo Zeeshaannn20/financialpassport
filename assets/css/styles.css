@@ -939,3 +939,22 @@ ul{margin:0;padding:0}
 .flip-inner{display:block}
 .flip-face .area,.flip-face .q{display:block}
 .hscroll.is-pinned .step-panel{min-height:300px}
+
+/* Our Approach: compact two-up method cards */
+.methods{display:grid;gap:var(--gutter)}
+@media (min-width:768px){.methods{grid-template-columns:1fr 1fr}}
+.method-card{display:flex;flex-direction:column;gap:20px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-card);padding:20px;box-shadow:var(--shadow-1)}
+.method-demo{display:grid;place-items:center;min-height:140px;border-radius:12px;background:var(--cloud);
+  background-image:radial-gradient(rgba(27,42,78,.08) 1px,transparent 1.2px);background-size:14px 14px;padding:16px}
+.method-card:first-child .method-demo{background-color:var(--amber-tint)}
+.method-card:last-child .method-demo{background-color:var(--mint)}
+.method-demo .budget{width:210px;background:#fff;border-radius:12px;padding:12px 14px;box-shadow:var(--shadow-1)}
+.method-text{display:grid;gap:8px}
+.method-text .icon-badge{width:40px;height:40px}
+.method-text p{color:var(--slate)}
+@media (min-width:1024px){.method-card{flex-direction:row;align-items:center}.method-demo{flex:0 0 46%;align-self:stretch}}
+
+/* Programs: explore buttons */
+.prog-btn{margin-top:auto;align-self:flex-start}
+.prog-card .card-body .icon-badge{width:40px;height:40px}
+.drop-card strong .ico{display:inline-block;width:14px;height:14px;vertical-align:-1px;margin-left:4px}

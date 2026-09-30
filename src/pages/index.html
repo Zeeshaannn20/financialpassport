@@ -1,4 +1,4 @@
-<!--meta contact="1" file="index.html" current="home" title="Financial Passport · Making money make sense. For everyone." desc="Financial Passport, an initiative of Project Financial Dignity, helps Class 11 to UG students go from knowing about money to knowing what to do with it." ch="Let's build financial confidence together." cl="Schools, colleges, placement cells, organisations and parents: tell us what you have in mind and we'll get back to you."-->
+<!--meta file="index.html" current="home" title="Financial Passport · Making money make sense. For everyone." desc="Financial Passport, an initiative of Project Financial Dignity, helps Class 11 to UG students go from knowing about money to knowing what to do with it." ch="Let's build financial confidence together." cl="Schools, colleges, placement cells, organisations and parents: tell us what you have in mind and we'll get back to you."-->
 <!-- 07.1 HERO -->
 <section class="hero" aria-labelledby="hero-h">
   <div class="container hero-grid">
@@ -9,7 +9,7 @@
       <p class="mission hero-fade" style="--d:680ms">Because financial dignity starts with knowing your money.</p>
       <div class="hero-actions hero-fade" style="--d:760ms">
         <a class="btn btn-primary" href="#our-work">Explore Our Work <span class="arrow">{{i:arrow}}</span></a>
-        <a class="btn btn-secondary" href="#contact" data-interest="partnership">Partner With Us</a>
+        <a class="btn btn-secondary" href="contact.html?interest=partnership">Contact Us</a>
       </div>
     </div>
     <div class="collage" aria-label="Collage: a young adult with a first salary, a student saving, a woman entrepreneur and a community learning session">
@@ -43,10 +43,10 @@
     <div class="section-head">
       <span class="eyebrow reveal">Our Work</span>
       <h2 class="reveal" id="work-h">Financial confidence at every stage of life.</h2>
-      <p class="reveal">One mission, four audiences. Each program meets people where they are with money, and helps them take the next step.</p>
+      <p class="reveal">One mission, three audiences. Each program meets people where they are with money, and helps them take the next step.</p>
     </div>
     <div class="carousel-wrap">
-      <div class="carousel carousel--4" data-carousel data-stagger>
+      <div class="carousel carousel--3" data-carousel data-stagger>
         <article class="card is-hover card--finfun">
           <div class="card-media"><div><div class="ph" style="background-color:#FFF1E6">{{i:sprout:art}}<span class="ph-cap">Photo: children playing a money game</span></div></div></div>
           <div class="card-body">
@@ -74,15 +74,6 @@
             <a class="link" href="contact.html?interest=women">Talk to us <span class="arrow">{{i:arrow}}</span></a>
           </div>
         </article>
-        <article class="card is-hover">
-          <div class="card-media"><div><div class="ph ph--navy">{{i:users:art}}<span class="ph-cap">Photo: community learning session</span></div></div></div>
-          <div class="card-body">
-            <span class="aud">Communities</span>
-            <h3 class="h4">Stronger money decisions, together.</h3>
-            <p>Sessions for families and communities on saving, borrowing safely and avoiding scams.</p>
-            <a class="link" href="contact.html?interest=community">Talk to us <span class="arrow">{{i:arrow}}</span></a>
-          </div>
-        </article>
       </div>
       <div class="dots" aria-label="Choose a card"></div>
     </div>
@@ -95,59 +86,31 @@
     <div class="section-head">
       <span class="eyebrow reveal">Our Approach</span>
       <h2 class="reveal" id="approach-h">We don't believe in boring financial education.</h2>
-      <p class="reveal">Learners play, simulate, build and ask. Every session ends with something they can use.</p>
+      <p class="reveal">Learners play and simulate. Every session ends with something they can use.</p>
     </div>
-    <div class="zig">
-      <div class="zig-row">
-        <div class="zig-media reveal reveal-left" data-inview>
-          <div class="ph ph--amber">{{i:cards:art}}<span class="ph-cap">Photo: card game session</span></div>
-          <div class="micro" aria-hidden="true"><div class="micro-title">Card game</div>
-            <div class="mini-cards"><div class="mini-card" style="--k:0"><div class="f"></div><div class="b save">Save</div></div><div class="mini-card" style="--k:1"><div class="f"></div><div class="b spend">Spend</div></div></div></div>
+    <div class="methods" data-stagger>
+      <article class="method-card" data-inview>
+        <div class="method-demo" aria-hidden="true">
+          <div class="mini-cards"><div class="mini-card" style="--k:0"><div class="f"></div><div class="b save">Save</div></div><div class="mini-card" style="--k:1"><div class="f"></div><div class="b spend">Spend</div></div></div>
         </div>
-        <div class="zig-text reveal">
-          <span class="method-ic icon-badge icon-badge--amber">{{i:cards}}</span>
-          <h3>Workshops &amp; card games</h3>
+        <div class="method-text">
+          <span class="icon-badge icon-badge--amber">{{i:cards}}</span>
+          <h3 class="h4">Workshops &amp; card games</h3>
           <p>Hands-on sessions where money choices become a game: save or spend, need or want, now or later.</p>
         </div>
-      </div>
-      <div class="zig-row">
-        <div class="zig-media reveal reveal-right" data-inview>
-          <div class="ph ph--mint">{{i:sliders:art}}<span class="ph-cap">Photo: toolkit / simulation</span></div>
-          <div class="micro budget" aria-hidden="true"><div class="micro-title">Monthly budget</div>
+      </article>
+      <article class="method-card" data-inview>
+        <div class="method-demo" aria-hidden="true">
+          <div class="budget"><div class="micro-title">Monthly budget</div>
             <div class="slider-track"><div class="slider-fill"></div><div class="slider-rail"><div class="slider-knob"></div></div></div>
             <div class="bars"><div class="bar needs"><i></i>Needs</div><div class="bar wants"><i></i>Wants</div></div></div>
         </div>
-        <div class="zig-text reveal">
-          <span class="method-ic icon-badge">{{i:sliders}}</span>
-          <h3>Toolkits &amp; simulations</h3>
+        <div class="method-text">
+          <span class="icon-badge">{{i:sliders}}</span>
+          <h3 class="h4">Toolkits &amp; simulations</h3>
           <p>Budget planners, trackers and simulations that let learners try real decisions without real risk.</p>
         </div>
-      </div>
-      <div class="zig-row">
-        <div class="zig-media reveal reveal-left" data-inview>
-          <div class="ph ph--navy">{{i:present:art}}<span class="ph-cap">Photo: project presentation</span></div>
-          <div class="micro" aria-hidden="true"><div class="micro-title">Project results</div>
-            <svg class="mini-chart" viewBox="0 0 210 80"><path class="grid-l" d="M0 79h210M0 52h210M0 26h210"/><path class="ln" pathLength="1" d="M8 66 L50 58 L84 62 L120 40 L158 34 L196 14"/><circle class="dot" cx="196" cy="14" r="6"/></svg></div>
-        </div>
-        <div class="zig-text reveal">
-          <span class="method-ic icon-badge icon-badge--navy">{{i:present}}</span>
-          <h3>Projects</h3>
-          <p>Learners pick a real money problem, research it and present what they would change.</p>
-        </div>
-      </div>
-      <div class="zig-row">
-        <div class="zig-media reveal reveal-right">
-          <div class="ph ph--mint">{{i:bot:art}}<span class="ph-cap">Photo: AI tablet / robot</span></div>
-          <div class="micro chat" data-chat="Should I save or invest ₹500?"><div class="micro-title">AI money buddy</div>
-            <div class="who">{{i:user}} Student asks</div>
-            <div class="bub q" aria-label="Should I save or invest ₹500?"><span class="typing" aria-hidden="true"><i></i><i></i><i></i></span></div></div>
-        </div>
-        <div class="zig-text reveal">
-          <span class="method-ic icon-badge">{{i:bot}}</span>
-          <h3>AI based learning experiences</h3>
-          <p>AI-guided activities that answer questions in plain words and adapt to each learner's pace.</p>
-        </div>
-      </div>
+      </article>
     </div>
   </div>
 </section>
@@ -158,47 +121,37 @@
     <div class="section-head">
       <span class="eyebrow reveal">Programs</span>
       <h2 class="reveal" id="programs-h">Build skills you can use.</h2>
-      <p class="reveal">Where career meets learning: courses, training, internships and projects built around real finance work.</p>
+      <p class="reveal">Pick a program and explore what learners do, how long it takes and how to bring it to your school or campus.</p>
     </div>
-    <div class="grid grid-2" data-stagger>
-      <article class="card is-hover prog-card">
-        <div class="card-media"><div><div class="ph ph--navy">{{i:laptop:art}}<span class="ph-cap">Photo: laptop payment flow</span></div></div></div>
+    <div class="grid grid-3" data-stagger>
+      <article class="card is-hover prog-card card--finfun">
+        <div class="card-media"><div><div class="ph" style="background-color:#FFF1E6">{{i:sprout:art}}<span class="ph-cap">Photo: children playing a money game</span></div></div></div>
         <div class="card-body">
-          <span class="icon-badge icon-badge--navy">{{i:laptop:icon-draw}}</span>
-          <h3 class="h4">Fintech upskilling courses</h3>
-          <p class="sub suggested">Learn how UPI, lending apps and digital money actually work.</p>
-          <p>Short courses on the tools and systems behind modern finance.</p>
-          <a class="link" href="contact.html?interest=courses">Explore Courses <span class="arrow">{{i:arrow}}</span></a>
+          <span class="icon-badge icon-badge--amber">{{i:sprout:icon-draw}}</span>
+          <h3 class="h4">FinFun</h3>
+          <p class="sub">For children</p>
+          <p>Games, stories and play-based activities that make money fun for young learners.</p>
+          <a class="btn btn-secondary btn-sm prog-btn" href="https://finfun.club" target="_blank" rel="noopener">Explore FinFun <span class="ext">{{i:ext}}</span><span class="sr-only">(opens in a new tab)</span></a>
         </div>
       </article>
       <article class="card is-hover prog-card">
-        <div class="card-media"><div><div class="ph ph--amber">{{i:hand:art}}<span class="ph-cap">Photo: trainer with students</span></div></div></div>
+        <div class="card-media"><div><div class="ph ph--mint">{{i:grad:art}}<span class="ph-cap">Photo: college students in a workshop</span></div></div></div>
         <div class="card-body">
-          <span class="icon-badge icon-badge--amber">{{i:hand:icon-draw}}</span>
-          <h3 class="h4">Hands-on real time training</h3>
-          <p class="sub suggested">Practise on real scenarios, guided by people who do this work.</p>
-          <p>Live, trainer-led sessions including Tax Readiness for final-year students.</p>
-          <a class="link" href="contact.html?interest=courses">Explore Training <span class="arrow">{{i:arrow}}</span></a>
+          <span class="icon-badge">{{i:grad:icon-draw}}</span>
+          <h3 class="h4">Financial Passport</h3>
+          <p class="sub">Class 11 – UG</p>
+          <p>A 5-stage journey from knowing about money to knowing what to do with it.</p>
+          <a class="btn btn-primary btn-sm prog-btn" href="financial-passport.html">Explore Financial Passport <span class="arrow">{{i:arrow}}</span></a>
         </div>
       </article>
       <article class="card is-hover prog-card">
-        <div class="card-media"><div><div class="ph ph--mint">{{i:briefcase:art}}<span class="ph-cap">Photo: intern team</span></div></div></div>
+        <div class="card-media"><div><div class="ph ph--amber">{{i:receipt:art}}<span class="ph-cap">Photo: final-year students with a payslip</span></div></div></div>
         <div class="card-body">
-          <span class="icon-badge">{{i:briefcase:icon-draw}}</span>
-          <h3 class="h4">Finternships</h3>
-          <p class="sub suggested">Get real finance experience before you graduate.</p>
-          <p>Internships where students work on live financial inclusion problems.</p>
-          <a class="link" href="finterventions.html">Explore Finternships <span class="arrow">{{i:arrow}}</span></a>
-        </div>
-      </article>
-      <article class="card is-hover prog-card">
-        <div class="card-media"><div><div class="ph ph--navy">{{i:chart:art}}<span class="ph-cap">Photo: project presentation</span></div></div></div>
-        <div class="card-body">
-          <span class="icon-badge icon-badge--navy">{{i:chart:icon-draw}}</span>
-          <h3 class="h4">Financial projects</h3>
-          <p class="sub suggested">Build something that goes in your portfolio, not a drawer.</p>
-          <p>Team projects that take one financial problem from idea to tested prototype.</p>
-          <a class="link" href="finterventions.html">View Projects <span class="arrow">{{i:arrow}}</span></a>
+          <span class="icon-badge icon-badge--navy">{{i:receipt:icon-draw}}</span>
+          <h3 class="h4">Tax Readiness</h3>
+          <p class="sub">Final-year UG &amp; PG · 4 hours</p>
+          <p>Your first salary, your first tax: CTC, TDS, Form 16 and ITR, explained in one workshop.</p>
+          <a class="btn btn-primary btn-sm prog-btn" href="tax-readiness.html">Explore Tax Readiness <span class="arrow">{{i:arrow}}</span></a>
         </div>
       </article>
     </div>
@@ -226,7 +179,7 @@
       <div class="collab-block"><span class="icon-badge icon-badge--navy">{{i:landmark}}</span><h3>Government</h3><p>State partnerships that take programs to more classrooms.</p></div>
       <div class="collab-block"><span class="icon-badge">{{i:globe}}</span><h3>Global universities</h3><p>Academic partners who help shape and evaluate the work.</p></div>
     </div>
-    <div class="center-cta reveal"><a class="btn btn-primary" href="#contact" data-interest="partnership" data-pulse>Partner With Us <span class="arrow">{{i:arrow}}</span></a></div>
+    <div class="center-cta reveal"><a class="btn btn-primary" href="contact.html?interest=partnership" data-pulse>Contact Us <span class="arrow">{{i:arrow}}</span></a></div>
   </div>
 </section>
 
